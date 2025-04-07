@@ -3,7 +3,10 @@
 </script>
 
 <template>
-<div></div>
+<div>
+  <el-button type="primary">Primary</el-button>
+  <el-button type="danger">Danger</el-button>
+</div>
 </template>
 
 <style scoped>
