@@ -3,13 +3,11 @@
 </script>
 
 <template>
-<div>
-  <el-button type="primary">Primary</el-button>
-  <el-button type="danger">Danger</el-button>
-</div>
+<router-view></router-view>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
 header {
   line-height: 1.5;
   max-height: 100vh;

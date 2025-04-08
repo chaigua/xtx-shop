@@ -18,7 +18,14 @@ export default defineConfig([
       },
     },
   },
-
+  {
+    'vue/multi-word-component-names': [
+        'warn',
+        {
+          ignores: ['index'] // vue组件名称多单词组成（忽略index.vue）
+        }
+      ],
+  },
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
 ])
