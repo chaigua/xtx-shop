@@ -1,6 +1,9 @@
 import instance from "@/utils/http"
 
-export const getBannerAPI=()=> instance.get('/home/banner')
+// export const getBannerAPI=()=> instance.get('/home/banner')
+export const getBannerAPI = (distributionSite = 1) => {
+  return instance.get('/home/banner', { params: { distributionSite } })
+}
 
 /**
  * @description: 获取新鲜好物
