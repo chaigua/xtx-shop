@@ -15,3 +15,11 @@ export const findNewAPI=()=> instance.get('/home/new')
  * @return {*}
  */
 export const findHotAPI=()=> instance.get('home/hot')
+
+
+/**
+ * @description: 获取人气推荐
+ * @param {*}
+ * @return {*}
+ */
+export const getGoodsAPI=()=> instance.get('/home/goods')
