@@ -7,12 +7,20 @@ const router = createRouter({
     {path:'/',component:()=>import ('@/views/Layout/index.vue'),
       children:[
         {path:'',component:()=>import('@/views/Home/index.vue')},
-        {path:'/category/:id',component:()=>import('@/views/Category/index.vue')}
+        {path:'/category/:id',component:()=>import('@/views/Category/index.vue')},
+        {path:'/category/sub/:id',component:()=>import('@/views/SubCategory/index.vue')}
       ]
     },
     {path:'/login',component:()=>import ('@/views/Login/index.vue')}
 
   ],
+  //路由滚动行为定制
+  scrollBehavior(){
+    return {
+      top:0,
+       behavior: 'smooth'
+    }
+  }
 })
 
 export default router
