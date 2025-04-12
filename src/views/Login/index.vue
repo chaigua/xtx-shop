@@ -1,7 +1,7 @@
 <script setup>
 import { ElMessage } from 'element-plus'
 import 'element-plus/theme-chalk/el-message.css'
-import { useUserStore } from '@/stores/user'
+import { useUserStore } from '@/stores/userStore'
 import { useRouter } from 'vue-router'
 import {ref} from 'vue'
 //表单校验

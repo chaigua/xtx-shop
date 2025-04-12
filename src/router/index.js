@@ -9,7 +9,8 @@ const router = createRouter({
         {path:'',component:()=>import('@/views/Home/index.vue')},
         {path:'/category/:id',component:()=>import('@/views/Category/index.vue')},
         {path:'/category/sub/:id',component:()=>import('@/views/SubCategory/index.vue')},
-        {path:'/detail/:id',component:()=> import('@/views/Detail/index.vue')}
+        {path:'/detail/:id',component:()=> import('@/views/Detail/index.vue')},
+        {path:'/cartList',component:()=>import('@/views/CartList/index.vue')}
       ]
     },
     {path:'/login',component:()=>import ('@/views/Login/index.vue')}
