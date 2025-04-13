@@ -53,7 +53,10 @@ export const useCartStore = defineStore('cart',()=>{
     cartList.value.forEach(item=>item.selected = selected)
   }
 
-
+  //清空本地购物车
+  const clearCart = ()=>{
+    cartList.value = []
+  }
 
   //计算属性
 
@@ -88,7 +91,9 @@ export const useCartStore = defineStore('cart',()=>{
     isAll,
     selectAll,
     selectedGoods,
-    selectedPrice
+    selectedPrice,
+    clearCart,
+    getCartList
     }
   },{
     persist: true,
