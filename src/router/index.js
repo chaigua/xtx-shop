@@ -14,6 +14,12 @@ const router = createRouter({
         {path:'checkout',component:()=>import('@/views/Checkout/index.vue')},
         {path:'pay',component:()=>import('@/views/Pay/index.vue')},
         {path:'paycallback',component:()=>import('@/views/Pay/PayBack.vue')},
+        {path:'member',component:()=>import('@/views/Member/index.vue'), redirect:'/member/user',
+          children:[
+            {path:'/member/user',component:()=>import('@/views/Member/components/UserInfo.vue')},
+            {path:'order',component:()=>import('@/views/Member/components/UserOrder.vue')}
+          ]
+        }
       ]
     },
     {path:'/login',component:()=>import ('@/views/Login/index.vue')}
